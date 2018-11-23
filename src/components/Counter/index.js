@@ -6,11 +6,19 @@ class Counter extends Component {
   }
 
   render () {
-   const { value } = this.props
+   const { value, onIncrement, onDecrement } = this.props
+   console.log(this.props)
     return (
       <div>
-        <p>{value}</p>
-        <p>Yooooooo</p>
+        <p>Clicked {value} times</p>
+        {' '}
+        <button onClick={onIncrement}>
+          +
+        </button>
+        {' '}
+        <button onClick={onDecrement}>
+          -
+        </button>
       </div>
     )
   }

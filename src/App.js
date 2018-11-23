@@ -12,6 +12,8 @@ class App extends Component {
       <div className="App">
         <Counter
           value={store.getState()}
+          onIncrement ={() => store.dispatch({ type: 'INCREMENT'})}
+          onDecrement = {() => store.dispatch({ type: 'DECREMENT'})}
         />
       </div>
     );
