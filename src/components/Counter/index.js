@@ -6,8 +6,10 @@ class Counter extends Component {
   }
 
   render () {
+   const { value } = this.props
     return (
       <div>
+        <p>{value}</p>
         <p>Yooooooo</p>
       </div>
     )
